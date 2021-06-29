@@ -1,5 +1,5 @@
 const express = require('express');
-
+const port = process.env.PORT || 8000
 
 var requests = require('requests');
 const app = express();
@@ -53,6 +53,6 @@ app.get('/update', (req, res) => {
 
 )
 
-app.listen(8000, () => {
+app.listen(port, () => {
     console.log("app is running")
 })
